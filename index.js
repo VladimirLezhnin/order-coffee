@@ -46,16 +46,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     submitButton.addEventListener('click', (event) => {
         event.preventDefault(); // Предотвращаем отправку формы
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay');
         const modal = document.createElement('div');
-        modal.style.position = 'fixed';
-        modal.style.left = '50%';
-        modal.style.top = '50%';
-        modal.style.transform = 'translate(-50%, -50%)';
-        modal.style.border = '1px solid black';
-        modal.style.padding = '20px';
-        modal.style.backgroundColor = 'white';
+        modal.classList.add('modal');
         modal.textContent = 'Заказ принят!';
-        document.body.appendChild(modal);
+        overlay.appendChild(modal);
+        document.body.appendChild(overlay);
         setTimeout(() => modal.remove(), 3000); // Удаление модального окна через 3 секунды
     });
 });
