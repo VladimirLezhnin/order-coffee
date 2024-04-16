@@ -120,13 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
     submitButton.addEventListener('click', (event) => {
         event.preventDefault();
         const modal = document.createElement('div');
-        modal.style.position = 'fixed';
-        modal.style.left = '50%';
-        modal.style.top = '50%';
-        modal.style.transform = 'translate(-50%, -50%)';
-        modal.style.border = '1px solid black';
-        modal.style.padding = '20px';
-        modal.style.backgroundColor = 'white';
+        modal.classList.add('modal');
         modal.textContent = 'Заказ принят!';
         document.body.appendChild(modal);
         setTimeout(() => modal.remove(), 3000);
