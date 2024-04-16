@@ -52,9 +52,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный чёрный фон */
-    display: none; /* Скрыт по умолчанию */
-    z-index: 1000; /* Выше основного контента */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
 }
 
 .modal {
@@ -66,8 +66,8 @@
     background-color: white;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1001; /* Выше оверлея */
-    display: none; /* Скрыт по умолчанию */
+    z-index: 1001;
+    display: none;
 }
 
 .close-button {
@@ -90,4 +90,28 @@ th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
+}
+
+.time-label, .submit-button {
+    display: block;
+    margin-top: 20px;
+}
+
+.time-label {
+    margin-bottom: 10px;
+}
+
+.input-time {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+.submit-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
