@@ -53,6 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.textContent = 'Заказ принят!';
         overlay.appendChild(modal);
         document.body.appendChild(overlay);
-        setTimeout(() => modal.remove(), 3000); // Удаление модального окна через 3 секунды
+        setTimeout(() => overlay.remove(), 3000); // Удаление модального окна через 3 секунды
     });
 });
